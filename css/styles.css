@@ -39,6 +39,14 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	opacity: .4;
+}
+
+a, a:hover {
+	transition: .4s;
+}
+
 img {
 	max-width: 100%;
 }
@@ -96,6 +104,27 @@ address ul {
 
 #portfolio article {
 	margin-bottom: 2rem;
+}
+
+/* Skills */
+
+#skills {
+	background: #fff;
+}
+
+#skills ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: .3rem;
+	padding-left: 0;
+	text-align: center;
+	list-style-type: none;
+}
+
+#skills li {
+	display: block;
+	padding: 1rem;
+	background: #fafafa;
 }
 
 /* Contact */
@@ -244,6 +273,66 @@ footer a {
 
 @media screen and (min-width: 1024px) {
 
+	/* General Styles */
 
+	#intro #intro-text,
+	#contact {
+		font-size: 1.5rem;
+	}
+
+	/* Header */
+
+	header {
+		display: flex;
+	}
+
+	header ul,
+	#main-nav li,
+	#main-nav li a {
+		margin: 0;
+		padding: 0;
+	}
+
+	#main-nav {
+		margin-left: auto;
+		padding: .5rem 0;
+	}
+
+	#main-nav li {
+		margin-left: 2rem;
+	}
+
+	/* Intro */
+
+	#intro {
+		grid-template-columns: 3fr 2fr;
+	}
+
+	#profile-picture {
+		margin-left: auto;
+	}
+
+	/* Portfolio */
+
+	#portfolio {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	#portfolio h2 {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+	/* Skills */
+
+	#skills ul {
+		grid-template-columns: repeat(3, 1fr)
+	}
+
+	/* Contact */
+
+	#contact {
+		padding: 2rem 12rem;
+	}
 
 }
