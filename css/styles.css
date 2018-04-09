@@ -125,6 +125,12 @@ address ul {
 	display: block;
 	padding: 1rem;
 	background: #fafafa;
+	transition: .4s;
+}
+
+#skills li:hover {
+	background: #eee;
+	transition: .4s;
 }
 
 /* Contact */
@@ -245,7 +251,7 @@ footer a {
 	/* Footer */
 
 	footer {
-		grid-template-columns: 1fr 1fr 2fr;
+		grid-template-columns: 1fr 1fr 3fr;
 		padding: 1.5rem;
 	}
 
