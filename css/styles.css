@@ -64,18 +64,18 @@ address ul {
 
 /* Main Navigation */
 
-nav {
+#main-nav {
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: .9rem;
 	text-transform: uppercase;
 	font-weight: bold;
 }
 
-nav li {
+#main-nav li {
 	margin-bottom: .3rem;
 }
 
-nav a {
+#main-nav a {
 	display: block;
 	padding: .75rem 0;
 	background: #fff;
@@ -83,7 +83,7 @@ nav a {
 
 /* Intro */
 
-#intro img {
+#intro #profile-pic {
 	max-width: 75%;
 }
 
@@ -131,10 +131,15 @@ footer a {
 	grid-column-start: 3;
 	grid-column-end: 4;
 	margin-top: 2px;
+	text-align: right;
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: .85rem;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+#footer-nav {
+	display: none;
 }
 
 
@@ -143,7 +148,97 @@ footer a {
 
 @media screen and (min-width: 768px) {
 
+	/* General Styles */
 
+	header,
+	section {
+		padding: 2rem;
+	}
+
+	#intro #intro-text,
+	#contact {
+		font-size: 1.3rem;
+	}
+
+	/* Main Navigation */
+
+	#main-nav li {
+		display: inline-block;
+	}
+
+	#main-nav li a {
+		padding: 1rem;
+		background: none;
+	}
+
+	/* Intro */
+
+	#intro {
+		display: grid;
+		grid-template-columns: 3fr 2fr;
+		padding-top: 0;
+	}
+
+	#intro #intro-text {
+		order: 1;
+		margin: 0 1rem 0 0;
+		text-align: left;
+	}
+
+	#intro #profile-picture {
+		order: 2;
+	}
+
+	/* Portfolio */
+
+	#portfolio {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: .75rem;
+	}
+
+	#portfolio h2 {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		margin-bottom: 2rem;
+	}
+
+	#portfolio article p {
+		padding: 0 1rem;
+	}
+
+	/* Contact */
+
+	#contact {
+		padding: 2rem 10rem;
+	}
+
+	/* Footer */
+
+	footer {
+		grid-template-columns: 1fr 1fr 2fr;
+		padding: 1.5rem;
+	}
+
+	#footer-nav {
+		display: initial;
+		grid-column-start: 3;
+		grid-column-end: 4;
+		text-align: right;
+	}
+
+	#footer-nav ul {
+		margin: 0;
+	}
+
+	#footer-nav li {
+		display: inline-block;
+		margin-left: 2rem;
+	}
+
+	.back-to-top {
+		display: none;
+	}
 
 }
 
