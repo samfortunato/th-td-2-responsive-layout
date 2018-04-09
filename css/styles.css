@@ -3,19 +3,35 @@
 body {
 	text-align: center;
 	background: #fafafa;
-	line-height: 1.5;
-	font-family: sans-serif;
+	line-height: 1.4;
+	font-family: 'Tajawal', Arial, sans-serif;
 	color: #666;
+	font-size: 1.125rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Open Sans', Arial, sans-serif;
+	color: #444;
 }
 
 h1 {
 	margin: 0;
+	font-size: 1.5rem;
 }
 
 h2 {
 	margin-bottom: 2.5rem;
 	font-size: 1rem;
 	text-transform: uppercase;
+}
+
+h3 {
+	font-weight: normal;
 }
 
 a {
@@ -49,6 +65,8 @@ address ul {
 /* Main Navigation */
 
 nav {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: .9rem;
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -59,8 +77,14 @@ nav li {
 
 nav a {
 	display: block;
-	padding: 1rem 0;
+	padding: .75rem 0;
 	background: #fff;
+}
+
+/* Intro */
+
+#intro img {
+	max-width: 75%;
 }
 
 /* Portfolio */
@@ -68,6 +92,10 @@ nav a {
 #portfolio {
 	padding: 2rem 1rem;
 	background: #fff;
+}
+
+#portfolio article {
+	margin-bottom: 2rem;
 }
 
 /* Contact */
@@ -78,6 +106,10 @@ nav a {
 
 #contact h2 {
 	margin-bottom: 1rem;
+}
+
+#contact a {
+	color: #888;
 }
 
 /* Footer */
@@ -98,8 +130,25 @@ footer h6 {
 footer a {
 	grid-column-start: 3;
 	grid-column-end: 4;
-	margin-top: 3px;
+	margin-top: 2px;
+	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: .85rem;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+
+
 }
