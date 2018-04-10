@@ -95,6 +95,10 @@ address ul {
 	max-width: 75%;
 }
 
+#intro h2 {
+	display: none;
+}
+
 /* Portfolio */
 
 #portfolio {
@@ -212,10 +216,6 @@ footer a {
 		display: grid;
 		grid-template-columns: 3fr 2fr;
 		padding-top: 0;
-	}
-
-	#intro h2 {
-		display: none;
 	}
 
 	#intro #intro-text {
