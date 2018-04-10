@@ -14,4 +14,4 @@ Creating the webpage included aligning items different based on what the screen 
 
 Slight adjustments were made to the layout according to my own tastes. I added an extra "Skills" section to the website, which includes a list of skills. I thought of an original design for the section, and applied custom styling.
 
-Both the HTML and CSS are valid, according to W3C's validator services (with the exception of the validator not liking the "pipe", or | character in the Google Fonts font link). It was written in the course instruction to ignore this specific error.
+Both the HTML and CSS are valid, according to W3C's validator services (with the exception of the validator not liking the "pipe", or |, character in the Google Fonts font link). It was written in the course instruction to ignore this specific error.
